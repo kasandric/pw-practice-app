@@ -1,2 +1,2 @@
 this is a test phrase one
-Aleksandra has the cat and dog
+Aleksandra has the cat but not the dog
