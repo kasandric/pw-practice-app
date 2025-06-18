@@ -40,3 +40,5 @@ test('Locator synax rules', async({page}) => {
 
 })
 
+
+
