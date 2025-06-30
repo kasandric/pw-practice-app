@@ -9,10 +9,10 @@ test.beforeEach(async({page}) => {
 
 test('Locator synax rules', async({page}) => {
     //by Tag name
-    page.locator('input')
+    await page.locator('input').first().click()
 
     //by ID
-    await page.locator('#inputEmail1').click()
+    page.locator('#inputEmail1')
 
     //by Class value
     page.locator('.shape-rectangle')
