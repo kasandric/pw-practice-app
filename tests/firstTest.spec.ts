@@ -50,7 +50,15 @@ test('User facing locators', async({page}) => {
     await page.getByTestId('SignIn').click()
 
     await page.getByTitle('IoT Dashboard').click()
+})
 
+test('Locating child elements', async({page}) => {
+    await page.locator('nb-card nb-radio :text-is("Option 1")').click()
+    await page.locator('nb-card').locator('nb-radio').locator(':text-is("Option 2")').click()
+
+    await page.locator('nb-card').getByRole('button', {name:"Sign in"}).first().click()
+
+    await page.locator('nb-card').nth(1).getByRole('button').click()
 
 })
 
